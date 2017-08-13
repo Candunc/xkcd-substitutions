@@ -7,7 +7,7 @@ String.prototype.replaceAll = function(search, replacement) {
 var replacement_array = {
 	// xkcd 1288 https://xkcd.com/1288/
 	"Witnesses"     :"These Dudes I Know",
-	"witnesses"     :"these dues I know",
+	"witnesses"     :"these dudes I know",
 	"Allegedly"     :"Kinda Probably",
 	"allegedly"     :"kinda probably",
 	"New Study"     :"Tumblr Post",
@@ -40,7 +40,7 @@ var replacement_array = {
 	"Self-Driving":"Uncontrollably Swerving",
 	"Self Driving":"Uncontrollably Swerving",
 	"self-driving":"uncontrollably swerving",
-	"self-driving":"uncontrollably swerving",
+	"self driving":"uncontrollably swerving",
 	"Poll":"Psychic Reading",
 	"poll":"psychic reading",
 	"Candidate":"Airbender",

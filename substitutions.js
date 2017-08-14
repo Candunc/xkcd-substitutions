@@ -5,6 +5,10 @@ String.prototype.replaceAll = function(search, replacement) {
 };
 
 var replacement_array = {
+	// xkcd 1031
+	"Keyboard":"Leopard",
+	"keyboard":"leopard",
+
 	// xkcd 1288 https://xkcd.com/1288/
 	"Witnesses"     :"These Dudes I Know",
 	"witnesses"     :"these dues I know",
@@ -32,7 +36,11 @@ var replacement_array = {
 	"Congressional Leaders":"River Spirits",
 	"Congressional leaders":"River Spirits",
 	"Homeland Security":"Homestar Runner",
-	"could not be reached for comment":"is guilty and everyone knows it.",
+	"could not be reached for comment":"is guilty and everyone knows it",
+
+	// xkcd 1418
+	"Force":"Horse",
+	"force":"horse",
 
 	// xkcd 1625 (Yea I got lazy with the spacing.)
 	"Debate":"Dance-Off",

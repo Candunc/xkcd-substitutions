@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "xkcd substitutions",
-	"version": "1.0",
+	"version": "1.1",
 
 	"description": "Applies all xkcd substitutions from comics #1288, #1265, and #1679",
 

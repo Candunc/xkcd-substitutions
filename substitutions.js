@@ -1,7 +1,12 @@
 // Replacement function from: http://stackoverflow.com/a/17606289/1687505
-String.prototype.replaceAll = function(search, replacement) {
-    var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
+String.prototype.replaceAllWords = function(word, replacement) {
+	var target = this;
+	const startOfWord = "([ -_])";
+	//the additional dot covers replacement of the last word in a sentence
+	const endOfWord = "([ -_.])";
+    
+	var wordMatchRegex = new RegExp(startOfWord + word + endOfWord, 'g');
+	return target.replace(wordMatchRegex, "$1" + replacement + "$2");
 };
 
 var replacement_array = {
@@ -172,7 +177,7 @@ while (allTextNodes.nextNode()) {
 	tmpnode = allTextNodes.currentNode;
 	tmptext = tmpnode.nodeValue
 	for (var key in replacement_array) {
-		tmptext = tmptext.replaceAll(key,replacement_array[key]);
+		tmptext = tmptext.replaceAllWords(key,replacement_array[key]);
 	}
 	tmpnode.nodeValue = tmptext;
 }

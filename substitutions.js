@@ -1,7 +1,8 @@
 // Replacement function from: http://stackoverflow.com/a/17606289/1687505
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
+    //wrap each replacement in \W to ensure that word boundaries are respected
+    return target.replace(new RegExp("\\W" + search + "\\W", 'g'), replacement);
 };
 
 var replacement_array = {

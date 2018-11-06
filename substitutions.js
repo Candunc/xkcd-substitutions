@@ -177,7 +177,7 @@ while (allTextNodes.nextNode()) {
 	tmpnode = allTextNodes.currentNode;
 	tmptext = tmpnode.nodeValue
 	for (var key in replacement_array) {
-		tmptext = tmptext.replaceAll(key,replacement_array[key]);
+		tmptext = tmptext.replaceAllWords(key,replacement_array[key]);
 	}
 	tmpnode.nodeValue = tmptext;
 }
